@@ -1,0 +1,225 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #666;
+  line-height: 1.3;
+}
+
+.heading {
+  color: #19191a;
+}
+
+.container {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+.nmd-main {
+  margin-left: 300px;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+.nmd-button {
+  display: inline-block;
+  text-align: center;
+  border: 2px solid;
+  background-color: transparent;
+  color: red;
+  font-size: 20px;
+  padding: 10px 20px;
+  width: auto;
+  cursor: pointer;
+  outline: none;
+}
+
+.nmd-nav {
+  width: 300px;
+  min-height: 100vh;
+  padding: 35px 0;
+  position: fixed;
+  background-image: linear-gradient(-45deg, #12c2e9, #c471ed, #f64f59);
+}
+.nmd-avt {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.nmd-image {
+  margin: 0 auto 20px;
+  width: 150px;
+  height: 150px;
+}
+.nmd-image img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nmd-fullname {
+  font-size: 24px;
+  font-weight: 700;
+}
+.nmd-positions {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.nmd-positions span {
+  color: red;
+}
+.nmd-nav-list {
+  text-align: center;
+  margin-bottom: 10%;
+}
+.nmd-nav-item {
+  margin: 0 0 10px 0;
+  padding: 5px 0;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.nmd-nav-link {
+  position: relative;
+  padding: 10px 0;
+  transition: 0.25s;
+}
+.nmd-nav-link::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  bottom: 6px;
+  left: 0;
+  right: 0;
+  width: 0;
+  background-color: red;
+  transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.nmd-nav-link:hover::after {
+  width: 100%;
+}
+.nmd-footer {
+  font-size: 12px;
+  color: #c7c7c7;
+  text-align: center;
+}
+.nmd-footer p + p {
+  margin-bottom: 5px;
+}
+
+.nmd-nav-item.active {
+  color: red;
+  font-weight: 600;
+}
+
+.nmd-nav-item.active .nmd-nav-link::after {
+  width: 100%;
+}
+
+.nmd-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000011;
+}
+.nmd-home h1 {
+  font-size: 150px;
+  color: #fff;
+}
+.nmd-hi, .nmd-pos {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+.nmd-hi span, .nmd-pos span {
+  color: #9a86fd;
+}
+
+.nmd-about {
+  padding: 30px;
+  background-color: #1a1c28;
+}
+.nmd-about h2 {
+  margin-bottom: 50px;
+}
+.nmd-about-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 40px;
+}
+.nmd-about .nmd-left-side {
+  width: 40%;
+  padding: 30px 30px 0 0;
+}
+.nmd-about .nmd-left-side p {
+  margin: 50px 0;
+}
+.nmd-about .nmd-user-profile {
+  width: 60%;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 30px;
+}
+.nmd-about .nmd-user-profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=app.css.map */
